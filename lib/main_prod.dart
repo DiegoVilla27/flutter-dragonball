@@ -4,7 +4,7 @@ import 'package:flutter_dragonball/core/router/router_config.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 void main() async {
-  await dotenv.load(fileName: ".env");
+  await dotenv.load(fileName: ".env.prod");
   runApp(ProviderScope(child: const MyApp()));
 }
 
