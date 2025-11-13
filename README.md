@@ -20,3 +20,5 @@ samples, guidance on mobile development, and a full API reference.
 // PARA CORRER LOS AMBIENTES DIFERENTES CON SUS ENV:
 flutter run -t lib/main.dart
 flutter run -t lib/main_prod.dart
+
+// API_URL=https://dragonball-api.com/api

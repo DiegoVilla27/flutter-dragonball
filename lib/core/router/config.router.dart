@@ -1,16 +1,20 @@
-import 'package:flutter_dragonball/core/router/router_names.dart';
+import 'package:flutter_dragonball/core/router/names.router.dart';
 import 'package:flutter_dragonball/features/characters/presentation/screens/details/character_detail.screen.dart';
 import 'package:flutter_dragonball/features/characters/presentation/screens/home/character_home.screen.dart';
 import 'package:go_router/go_router.dart';
 
-/// [AppRouterConfig] is responsible for configuring the application's routing using GoRouter.
+/// @class AppRouterConfig
+/// @description Defines and manages the main routing configuration of the application.
+/// This class provides a centralized [GoRouter] setup used for navigation between screens.
 ///
-/// It defines the main navigation structure, specifying the initial route and all available routes.
-/// Each route is associated with a name, a path, and a corresponding screen widget.
-///
-/// Usage:
-/// Access the router via `AppRouterConfig.router` to integrate with your app's navigation.
+/// @remarks
+/// The router defines the app’s navigation structure using named routes.
+/// It is initialized once and can be accessed globally throughout the app.
 class AppRouterConfig {
+  /// @variable router
+  /// @description Main [GoRouter] instance containing the route definitions of the app.
+  /// It specifies the initial location and the available routes, such as the home
+  /// and character details screens.
   static final GoRouter router = GoRouter(
     initialLocation: '/',
     routes: <RouteBase>[
